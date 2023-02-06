@@ -18,8 +18,6 @@ GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO users;
 
 ## Run app
 export FLASK_APP=users/entrypoints/flask_app.py
-export FLASK_DEBUG=1
-export PYTHONUNBUFFERED=1
 flask run --host=0.0.0.0 --port=5005
 
 ## Testing

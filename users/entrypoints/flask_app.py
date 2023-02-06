@@ -1,9 +1,6 @@
 from datetime import datetime
 from flask import Flask, json, request, Response
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 
-from users.domain import model
 from users.adapters import orm
 from users.service_layer import services, unit_of_work
 
